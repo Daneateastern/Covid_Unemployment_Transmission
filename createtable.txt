@@ -1,0 +1,84 @@
+CREATE TABLE Unemployment_Rate_By_State (
+	FIPS VARCHAR (50),
+	state VARCHAR ( 50 ),
+	year VARCHAR (50),
+	month VARCHAR ( 50 ),
+	unemployment_Total FLOAT (50),
+      unemployment_Rate FLOAT (10),
+	date_key VARCHAR PRIMARY KEY
+);
+
+CREATE TABLE Unemployment_Rate_By_City (
+	FIPS VARCHAR (50),
+	city VARCHAR ( 50 ),
+	year VARCHAR (50),
+	month VARCHAR ( 50 ),
+	unemployment_Total FLOAT (50),
+      unemployment_Rate FLOAT (10),
+	date_key VARCHAR PRIMARY KEY
+);
+
+CREATE TABLE State_Mapper (
+	State VARCHAR (50) PRIMARY KEY,
+	Abbrev VARCHAR ( 50 ),
+	Code VARCHAR (50)
+);
+
+CREATE TABLE DimDate (
+	sasdate VARCHAR (50) ,
+	date_key VARCHAR ( 50 ) PRIMARY KEY,
+	word_date VARCHAR (50),
+	date VARCHAR (50),
+	Year VARCHAR (50) ,
+	Quarter VARCHAR (50) ,
+	Month VARCHAR ( 50 ),
+	Day_Of_Month VARCHAR (50),
+	Week VARCHAR ( 50 ),
+	Day_Of_Week VARCHAR (50),
+	Weekday VARCHAR ( 50 ),
+	Month_and_year VARCHAR (50)
+	
+);
+
+
+
+CREATE TABLE Community_Levels (
+	county VARCHAR (50) ,
+	county_fips VARCHAR ( 50 ),
+	state VARCHAR (50),
+	county_population VARCHAR (50),
+	covid_cases_per_100k VARCHAR ( 50 ),
+	covid_19_community_level VARCHAR (50),
+	date_raw VARCHAR (50),
+	date_key VARCHAR (50) PRIMARY KEY
+);
+
+
+CREATE TABLE FIPS_Code_Mapper (
+	FIPS VARCHAR (50) PRIMARY KEY,
+	county VARCHAR (50),
+	state VARCHAR (50)
+);
+
+
+
+CREATE TABLE Covid_Cases_Per_State (
+	date VARCHAR (50),
+	state VARCHAR (50),
+	cases FLOAT (50),
+	new_cases FLOAT (50),
+	date_raw VARCHAR (50),
+	date_key VARCHAR (50) PRIMARY KEY
+);
+
+
+
+CREATE TABLE Covid_Vaccines_Per_State (
+	date VARCHAR (50),
+	state VARCHAR (50),
+	daily_administered VARCHAR (50),
+	daily_dose_1 VARCHAR (50),
+	daily_boosters VARCHAR  (50),
+	date_raw VARCHAR (50),
+	date_key VARCHAR (50) PRIMARY KEY
+);
