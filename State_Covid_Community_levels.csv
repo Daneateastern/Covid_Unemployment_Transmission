@@ -1,0 +1,445 @@
+date_raw,state,community_level
+20220224,Alabama,Medium
+20220303,Alabama,Medium
+20220310,Alabama,Low
+20220317,Alabama,Low
+20220324,Alabama,Low
+20220331,Alabama,Low
+20220407,Alabama,Low
+20220414,Alabama,Low
+20220224,Alaska,Medium
+20220303,Alaska,Medium
+20220310,Alaska,Medium
+20220317,Alaska,Medium
+20220324,Alaska,Medium
+20220331,Alaska,Low
+20220407,Alaska,Low
+20220414,Alaska,Low
+20220303,American Samoa,Low
+20220310,American Samoa,High
+20220317,American Samoa,Medium
+20220324,American Samoa,high
+20220331,American Samoa,High
+20220407,American Samoa,High
+20220414,American Samoa,High
+20220224,Arizona,High
+20220303,Arizona,Medium
+20220310,Arizona,Medium
+20220317,Arizona,Low
+20220324,Arizona,Low
+20220331,Arizona,Low
+20220407,Arizona,Low
+20220414,Arizona,Low
+20220224,Arkansas,High
+20220303,Arkansas,Low
+20220310,Arkansas,Low
+20220317,Arkansas,Low
+20220324,Arkansas,Low
+20220331,Arkansas,Low
+20220407,Arkansas,Low
+20220414,Arkansas,Low
+20220224,California,High
+20220303,California,Medium
+20220310,California,Low
+20220317,California,Low
+20220324,California,Low
+20220331,California,Low
+20220407,California,Low
+20220414,California,Low
+20220224,Colorado,Low
+20220303,Colorado,Low
+20220310,Colorado,Low
+20220317,Colorado,Low
+20220324,Colorado,Low
+20220331,Colorado,Low
+20220407,Colorado,Low
+20220414,Colorado,Low
+20220303,Commonwealth of the Northern Mariana Islands,Medium
+20220310,Commonwealth of the Northern Mariana Islands,Medium
+20220317,Commonwealth of the Northern Mariana Islands,Medium
+20220324,Commonwealth of the Northern Mariana Islands,high
+20220331,Commonwealth of the Northern Mariana Islands,Low
+20220407,Commonwealth of the Northern Mariana Islands,Low
+20220414,Commonwealth of the Northern Mariana Islands,Low
+20220224,Connecticut,Low
+20220303,Connecticut,Low
+20220310,Connecticut,Low
+20220317,Connecticut,Low
+20220324,Connecticut,Low
+20220331,Connecticut,Low
+20220407,Connecticut,Low
+20220414,Connecticut,Low
+20220224,Delaware,Medium
+20220303,Delaware,Low
+20220310,Delaware,Low
+20220317,Delaware,Low
+20220324,Delaware,Low
+20220331,Delaware,Low
+20220407,Delaware,Low
+20220414,Delaware,Low
+20220224,District of Columbia,Low
+20220303,District of Columbia,Low
+20220310,District of Columbia,Low
+20220317,District of Columbia,Low
+20220324,District of Columbia,Low
+20220331,District of Columbia,Low
+20220407,District of Columbia,Low
+20220414,District of Columbia,Medium
+20220224,Florida,High
+20220303,Florida,Medium
+20220310,Florida,Low
+20220317,Florida,Low
+20220324,Florida,Low
+20220331,Florida,Low
+20220407,Florida,Low
+20220414,Florida,Low
+20220224,Georgia,Medium
+20220303,Georgia,Low
+20220310,Georgia,Low
+20220317,Georgia,Low
+20220324,Georgia,Low
+20220331,Georgia,Low
+20220407,Georgia,Low
+20220414,Georgia,Low
+20220303,Guam,High
+20220310,Guam,High
+20220317,Guam,High
+20220324,Guam,high
+20220331,Guam,High
+20220407,Guam,Medium
+20220414,Guam,High
+20220224,Hawaii,Medium
+20220303,Hawaii,Low
+20220310,Hawaii,Low
+20220317,Hawaii,Low
+20220324,Hawaii,Low
+20220331,Hawaii,Low
+20220407,Hawaii,Low
+20220414,Hawaii,Low
+20220224,Idaho,Medium
+20220303,Idaho,Medium
+20220310,Idaho,Low
+20220317,Idaho,Low
+20220324,Idaho,Low
+20220331,Idaho,Low
+20220407,Idaho,Low
+20220414,Idaho,Low
+20220224,Illinois,Medium
+20220303,Illinois,Low
+20220310,Illinois,Low
+20220317,Illinois,Low
+20220324,Illinois,Low
+20220331,Illinois,Low
+20220407,Illinois,Low
+20220414,Illinois,Low
+20220224,Indiana,Medium
+20220303,Indiana,Low
+20220310,Indiana,Low
+20220317,Indiana,Low
+20220324,Indiana,Low
+20220331,Indiana,Low
+20220407,Indiana,Low
+20220414,Indiana,Low
+20220224,Iowa,Low
+20220303,Iowa,Low
+20220310,Iowa,Low
+20220317,Iowa,Low
+20220324,Iowa,Low
+20220331,Iowa,Low
+20220407,Iowa,Low
+20220414,Iowa,Low
+20220224,Kansas,Medium
+20220303,Kansas,Low
+20220310,Kansas,Low
+20220317,Kansas,Low
+20220324,Kansas,Low
+20220331,Kansas,Low
+20220407,Kansas,Low
+20220414,Kansas,Low
+20220224,Kentucky,High
+20220303,Kentucky,High
+20220310,Kentucky,Low
+20220317,Kentucky,Low
+20220324,Kentucky,Low
+20220331,Kentucky,Low
+20220407,Kentucky,Low
+20220414,Kentucky,Low
+20220224,Louisiana,Medium
+20220303,Louisiana,Low
+20220310,Louisiana,Low
+20220317,Louisiana,Low
+20220324,Louisiana,Low
+20220331,Louisiana,Low
+20220407,Louisiana,Low
+20220414,Louisiana,Low
+20220224,Maine,High
+20220303,Maine,Medium
+20220310,Maine,Low
+20220317,Maine,Low
+20220324,Maine,Low
+20220331,Maine,Low
+20220407,Maine,Low
+20220414,Maine,Low
+20220224,Maryland,Low
+20220303,Maryland,Low
+20220310,Maryland,Low
+20220317,Maryland,Low
+20220324,Maryland,Low
+20220331,Maryland,Low
+20220407,Maryland,Low
+20220414,Maryland,Low
+20220224,Massachusetts,Low
+20220303,Massachusetts,Low
+20220310,Massachusetts,Low
+20220317,Massachusetts,Low
+20220324,Massachusetts,Low
+20220331,Massachusetts,Low
+20220407,Massachusetts,Low
+20220414,Massachusetts,Low
+20220224,Michigan,Medium
+20220303,Michigan,Medium
+20220310,Michigan,Low
+20220317,Michigan,Low
+20220324,Michigan,Low
+20220331,Michigan,Low
+20220407,Michigan,Low
+20220414,Michigan,Low
+20220224,Minnesota,High
+20220303,Minnesota,Low
+20220310,Minnesota,Low
+20220317,Minnesota,Low
+20220324,Minnesota,Low
+20220331,Minnesota,Low
+20220407,Minnesota,Low
+20220414,Minnesota,Low
+20220224,Mississippi,Medium
+20220303,Mississippi,Low
+20220310,Mississippi,Low
+20220317,Mississippi,Low
+20220324,Mississippi,Low
+20220331,Mississippi,Low
+20220407,Mississippi,Low
+20220414,Mississippi,Low
+20220224,Missouri,Medium
+20220303,Missouri,Medium
+20220310,Missouri,Low
+20220317,Missouri,Low
+20220324,Missouri,Low
+20220331,Missouri,Low
+20220407,Missouri,Low
+20220414,Missouri,Low
+20220224,Montana,High
+20220303,Montana,Medium
+20220310,Montana,Medium
+20220317,Montana,Low
+20220324,Montana,Low
+20220331,Montana,Low
+20220407,Montana,Low
+20220414,Montana,Low
+20220224,Nebraska,Medium
+20220303,Nebraska,Medium
+20220310,Nebraska,Low
+20220317,Nebraska,Low
+20220324,Nebraska,Low
+20220331,Nebraska,Low
+20220407,Nebraska,Low
+20220414,Nebraska,Low
+20220224,Nevada,Medium
+20220303,Nevada,Medium
+20220310,Nevada,Low
+20220317,Nevada,Low
+20220324,Nevada,Low
+20220331,Nevada,Low
+20220407,Nevada,Low
+20220414,Nevada,Low
+20220224,New Hampshire,Medium
+20220303,New Hampshire,Medium
+20220310,New Hampshire,Low
+20220317,New Hampshire,Low
+20220324,New Hampshire,Low
+20220331,New Hampshire,Low
+20220407,New Hampshire,Low
+20220414,New Hampshire,Medium
+20220224,New Jersey,Low
+20220303,New Jersey,Low
+20220310,New Jersey,Low
+20220317,New Jersey,Low
+20220324,New Jersey,Low
+20220331,New Jersey,Low
+20220407,New Jersey,Low
+20220414,New Jersey,Low
+20220224,New Mexico,Medium
+20220303,New Mexico,Medium
+20220310,New Mexico,Low
+20220317,New Mexico,Low
+20220324,New Mexico,Low
+20220331,New Mexico,Low
+20220407,New Mexico,Low
+20220414,New Mexico,Low
+20220224,New York,Low
+20220303,New York,Low
+20220310,New York,Low
+20220317,New York,Low
+20220324,New York,Low
+20220331,New York,Low
+20220407,New York,Low
+20220414,New York,Low
+20220224,North Carolina,High
+20220303,North Carolina,Medium
+20220310,North Carolina,Low
+20220317,North Carolina,Low
+20220324,North Carolina,Low
+20220331,North Carolina,Low
+20220407,North Carolina,Low
+20220414,North Carolina,Low
+20220224,North Dakota,Medium
+20220303,North Dakota,Medium
+20220310,North Dakota,Low
+20220317,North Dakota,Low
+20220324,North Dakota,Low
+20220331,North Dakota,Low
+20220407,North Dakota,Low
+20220414,North Dakota,Low
+20220224,Ohio,Medium
+20220303,Ohio,Low
+20220310,Ohio,Low
+20220317,Ohio,Low
+20220324,Ohio,Low
+20220331,Ohio,Low
+20220407,Ohio,Low
+20220414,Ohio,Low
+20220224,Oklahoma,High
+20220303,Oklahoma,Medium
+20220310,Oklahoma,Low
+20220317,Oklahoma,Low
+20220324,Oklahoma,Low
+20220331,Oklahoma,Low
+20220407,Oklahoma,Low
+20220414,Oklahoma,Low
+20220224,Oregon,Medium
+20220303,Oregon,Low
+20220310,Oregon,Low
+20220317,Oregon,Low
+20220324,Oregon,Low
+20220331,Oregon,Low
+20220407,Oregon,Low
+20220414,Oregon,Low
+20220224,Pennsylvania,Medium
+20220303,Pennsylvania,Low
+20220310,Pennsylvania,Low
+20220317,Pennsylvania,Low
+20220324,Pennsylvania,Low
+20220331,Pennsylvania,Low
+20220407,Pennsylvania,Low
+20220414,Pennsylvania,Low
+20220224,Puerto Rico,Low
+20220303,Puerto Rico,Low
+20220310,Puerto Rico,Low
+20220317,Puerto Rico,Low
+20220324,Puerto Rico,Low
+20220331,Puerto Rico,Low
+20220407,Puerto Rico,Low
+20220414,Puerto Rico,Low
+20220224,Rhode Island,Medium
+20220303,Rhode Island,Low
+20220310,Rhode Island,Low
+20220317,Rhode Island,Low
+20220324,Rhode Island,Low
+20220331,Rhode Island,Low
+20220407,Rhode Island,Low
+20220414,Rhode Island,Medium
+20220224,South Carolina,High
+20220303,South Carolina,Low
+20220310,South Carolina,Low
+20220317,South Carolina,Low
+20220324,South Carolina,Low
+20220331,South Carolina,Low
+20220407,South Carolina,Low
+20220414,South Carolina,Low
+20220224,South Dakota,Low
+20220303,South Dakota,Low
+20220310,South Dakota,Low
+20220317,South Dakota,Low
+20220324,South Dakota,Low
+20220331,South Dakota,Low
+20220407,South Dakota,Low
+20220414,South Dakota,Low
+20220224,Tennessee,High
+20220303,Tennessee,Medium
+20220310,Tennessee,Low
+20220317,Tennessee,Low
+20220324,Tennessee,Low
+20220331,Tennessee,Low
+20220407,Tennessee,Low
+20220414,Tennessee,Low
+20220224,Texas,Medium
+20220303,Texas,Low
+20220310,Texas,Low
+20220317,Texas,Low
+20220324,Texas,Low
+20220331,Texas,Low
+20220407,Texas,Low
+20220414,Texas,Low
+20220303,United States Virgin Islands,Low
+20220310,United States Virgin Islands,Low
+20220317,United States Virgin Islands,Low
+20220324,United States Virgin Islands,low
+20220331,United States Virgin Islands,Low
+20220407,United States Virgin Islands,Low
+20220414,United States Virgin Islands,Low
+20220224,Utah,Medium
+20220303,Utah,Medium
+20220310,Utah,Low
+20220317,Utah,Low
+20220324,Utah,Low
+20220331,Utah,Low
+20220407,Utah,Low
+20220414,Utah,Low
+20220224,Vermont,Medium
+20220303,Vermont,Medium
+20220310,Vermont,Medium
+20220317,Vermont,Low
+20220324,Vermont,Low
+20220331,Vermont,Low
+20220407,Vermont,Low
+20220414,Vermont,Medium
+20220224,Virginia,High
+20220303,Virginia,Low
+20220310,Virginia,Low
+20220317,Virginia,Low
+20220324,Virginia,Low
+20220331,Virginia,Low
+20220407,Virginia,Low
+20220414,Virginia,Low
+20220224,Washington,Medium
+20220303,Washington,Low
+20220310,Washington,Low
+20220317,Washington,Low
+20220324,Washington,Low
+20220331,Washington,Low
+20220407,Washington,Low
+20220414,Washington,Low
+20220224,West Virginia,High
+20220303,West Virginia,High
+20220310,West Virginia,High
+20220317,West Virginia,Medium
+20220324,West Virginia,Low
+20220331,West Virginia,Low
+20220407,West Virginia,Low
+20220414,West Virginia,Low
+20220224,Wisconsin,Low
+20220303,Wisconsin,Low
+20220310,Wisconsin,Low
+20220317,Wisconsin,Low
+20220324,Wisconsin,Low
+20220331,Wisconsin,Low
+20220407,Wisconsin,Low
+20220414,Wisconsin,Low
+20220224,Wyoming,Low
+20220303,Wyoming,Low
+20220310,Wyoming,Low
+20220317,Wyoming,Low
+20220324,Wyoming,Low
+20220331,Wyoming,Low
+20220407,Wyoming,Low
+20220414,Wyoming,Low

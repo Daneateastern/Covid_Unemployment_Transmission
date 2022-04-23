@@ -1,0 +1,16 @@
+-- Update --
+
+UPDATE public.unemployment_rate_by_city
+SET city = 'Seattle', year = '2023'
+WHERE CustomerID = '51000201910New York city'
+
+SELECT * FROM public.unemployment_rate_by_city
+
+
+UPDATE public.unemployment_rate_by_city
+SET city = 'New York city', year = '2019'
+WHERE CustomerID = '51000201910New York city'
+
+SELECT * FROM public.unemployment_rate_by_city
+
+

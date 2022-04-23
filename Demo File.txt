@@ -1,0 +1,208 @@
+------------UPDATE---------------------
+
+UPDATE public.unemployment_rate_by_city
+SET city = 'Seattle', year = '2023'
+WHERE CustomerID = '51000201910New York city'
+
+SELECT * FROM public.unemployment_rate_by_city
+
+
+UPDATE public.unemployment_rate_by_city
+SET city = 'New York city', year = '2019'
+WHERE CustomerID = '51000201910New York city'
+
+SELECT * FROM public.unemployment_rate_by_city
+
+
+
+--------------DELETE--------------------
+
+
+-- Deleting Non-Clean Date--
+DELETE 
+FROM 
+public.covid_vaccines_per_state 
+WHERE State ='US'
+
+DELETE 
+FROM 
+public.covid_vaccines_per_state 
+WHERE State ='VI'
+
+
+-- delete a certain row by their primary key--
+
+DELETE
+FROM
+public.unemployment_rate_by_city
+WHERE date_key = '51000201910New York city'
+
+-- delete all the data in the city table --
+DELETE
+FROM
+public.unemployment_rate_by_city
+WHERE city = 'New York city'
+
+
+--------------QUERY----------------------
+
+
+--Query One--
+
+--Get Community Levels By State--
+
+SELECT * FROM(
+Select date_raw, State, Covid_19_community_Level, LevelCount,
+ROW_NUMBER() OVER (
+      PARTITION BY State, date_raw
+      ORDER BY LevelCount DESC
+   ) row_num
+FROM(
+Select date_raw, State, Covid_19_community_Level,
+COUNT(*) as LevelCount FROM public.community_levels
+GROUP BY date_raw, State, Covid_19_community_level) as temp) as temp2 WHERE row_num = 1
+
+
+--Query Two--
+
+--Find Unemployment Totals of Alabama in March of 2022--
+SELECT 
+state,
+year,
+month,
+unemployment_total
+FROM public.unemployment_rate_by_state
+WHERE State = 'Alabama'
+AND Year = '2022'
+AND Month = '3'
+
+
+
+--Query Three--
+
+--Find Average Unemployment Rate for California in 2022--
+SELECT 
+state,
+year,
+AVG(Unemployment_rate) as average_rate
+FROM(
+SELECT 
+state,
+year,
+month,
+unemployment_rate
+FROM public.unemployment_rate_by_state
+WHERE State = 'California'
+AND Year = '2022') as temp
+GROUP BY State,Year
+
+--Query Four--
+
+-Find all the covid cases in Washington State for the most recent date --
+
+SELECT 
+MAX(date) as maxdate,
+state,
+MAX(cases) as cases
+FROM(
+SELECT 
+cast(date as date) as date,
+states.state,
+cases
+FROM public.covid_cases_per_state as cases
+LEFT JOIN state_mapper as states on cases.state = states.code) as temp
+WHERE State = 'Washington'
+GROUP BY state
+
+--Query Five--
+
+--Find the state with the highest amount of covid cases at the beginning of January 2022--
+
+SELECT * FROM(
+SELECT
+cases.date,
+states.state,
+cases,
+ROW_NUMBER() OVER (
+      PARTITION BY cases.date
+      ORDER BY cases DESC
+   ) row_num
+
+
+FROM public.covid_cases_per_state as cases
+LEFT JOIN state_mapper as states on cases.state = states.code
+WHERE date = '01/01/2022') as temp
+WHERE row_num = 1
+
+
+--Query Six --
+
+
+--Find The Sum of Alabamas new Covid Cases from April 1st - April 7th 2022 --
+
+SELECT SUM(new_cases) as New_Weekly_Cases
+FROM(
+SELECT
+date,
+states.state,
+new_cases
+FROM 
+public.covid_cases_per_state as cases
+LEFT JOIN state_mapper as states ON cases.state = states.code
+WHERE states.state = 'Alabama'
+AND date IN ('04/01/2022',
+			 '04/02/2022',
+			 '04/03/2022',
+			 '04/04/2022',
+			 '04/05/2022',
+			 '04/06/2022',
+			 '04/07/2022')) as temp
+
+--Query Seven--
+
+--Find which states had high covid19 community levels in March of 2022--
+
+SELECT * FROM (SELECT 
+CAST(date_raw as date) as date,
+state,
+covid_19_community_level
+FROM public.community_levels_per_state) as temp
+WHERE date IN ('2022-03-03',
+			   '2022-03-10',
+			   '2022-03-17',
+			   '2022-03-24',
+			   '2022-03-31')
+AND covid_19_community_level = 'High'
+
+
+--Query Eight--
+
+--Find which states had administered the most boosters in the month of February 2022--
+
+SELECT * FROM(
+SELECT 
+feb.day_of_month,
+boosters.state,
+boosters.total_boosters,
+ROW_NUMBER() OVER (
+      PARTITION BY feb.day_of_month
+      ORDER BY boosters.total_boosters DESC
+   ) row_num
+FROM(
+SELECT day_of_month
+FROM public.dimdate
+WHERE day_of_month = '2'
+AND month = '2'
+AND year = '2022') as feb
+
+CROSS JOIN
+(
+SELECT 
+state,
+SUM(CAST(daily_boosters as INT)) as total_boosters
+FROM
+public.covid_vaccines_per_state
+WHERE date LIKE '02%'
+AND state != 'US'
+GROUP BY state) as boosters) as results
+WHERE results.row_num = 1

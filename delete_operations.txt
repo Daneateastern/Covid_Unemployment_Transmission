@@ -1,0 +1,24 @@
+-- Deleting Non-Clean Date--
+DELETE 
+FROM 
+public.covid_vaccines_per_state 
+WHERE State ='US'
+
+DELETE 
+FROM 
+public.covid_vaccines_per_state 
+WHERE State ='VI'
+
+
+-- delete a certain row by their primary key--
+
+DELETE
+FROM
+public.unemployment_rate_by_city
+WHERE date_key = '51000201910New York city'
+
+-- delete all the data in the city table --
+DELETE
+FROM
+public.unemployment_rate_by_city
+WHERE city = 'New York city'

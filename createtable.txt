@@ -24,7 +24,7 @@ CREATE TABLE State_Mapper (
 	Code VARCHAR (50)
 );
 
-CREATE TABLE DimDate (
+CREATE TABLE DateMapper (
 	sasdate VARCHAR (50) ,
 	date_key VARCHAR ( 50 ) PRIMARY KEY,
 	word_date VARCHAR (50),
@@ -42,7 +42,7 @@ CREATE TABLE DimDate (
 
 
 
-CREATE TABLE Community_Levels (
+CREATE TABLE Community_Levels_Per_County (
 	county VARCHAR (50) ,
 	county_fips VARCHAR ( 50 ),
 	state VARCHAR (50),
@@ -51,6 +51,14 @@ CREATE TABLE Community_Levels (
 	covid_19_community_level VARCHAR (50),
 	date_raw VARCHAR (50),
 	date_key VARCHAR (50) PRIMARY KEY
+);
+
+
+CREATE TABLE Community_Levels_Per_State(
+	date_raw VARCHAR (50),
+	state VARCHAR (50),
+	covid_19_community_level VARCHAR (50),
+	date_key VARCHAR (100) PRIMARY KEY
 );
 
 
@@ -81,4 +89,37 @@ CREATE TABLE Covid_Vaccines_Per_State (
 	daily_boosters VARCHAR  (50),
 	date_raw VARCHAR (50),
 	date_key VARCHAR (50) PRIMARY KEY
+);
+
+CREATE TABLE Rent_Increases_Per_State (
+	increase_2021 FLOAT (50),
+	increase_2022 FLOAT (50),
+	state VARCHAR (50) PRIMARY KEY
+);
+
+CREATE TABLE Covid_Deaths_Per_State (
+	date VARCHAR (50),
+	state VARCHAR (50),
+	total_deaths FLOAT (50),
+	new_deaths FLOAT (50),
+	date_raw VARCHAR (50),
+	date_key VARCHAR (50) PRIMARY KEY
+);
+
+
+CREATE TABLE County_Census (
+	state VARCHAR (50) PRIMARY KEY,
+	Pop_2020 VARCHAR (50),
+	Pop_2021 VARCHAR (50),
+	Death_2020 VARCHAR (50),
+	Death_2021 VARCHAR (50)
+);
+
+
+CREATE TABLE State_Census (
+	state VARCHAR (50) PRIMARY KEY,
+	Pop_2020 VARCHAR (50),
+	Pop_2021 VARCHAR (50),
+	Death_2020 VARCHAR (50),
+	Death_2021 VARCHAR (50)
 );

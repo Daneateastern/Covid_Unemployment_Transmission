@@ -54,7 +54,7 @@ try:
     cursor = connection.cursor()
 
 
-    postgres_insert_query = """ INSERT INTO Community_Levels 
+    postgres_insert_query = """ INSERT INTO Community_Levels_per_county 
     (county,
      county_fips, 
      state, 
