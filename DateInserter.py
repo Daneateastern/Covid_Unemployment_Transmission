@@ -20,7 +20,7 @@ for i in range(0, len(dimDates)):
     dimDates['date_raw'].loc[i] = dimDates['date'].loc[i].replace("/","")
 dimDates
 
-"""
+
 #Does a conversion of all of the data
 dimDates = dimDates.astype({"sasdate": str})
 dimDates = dimDates.astype({"date_key": str})
@@ -35,7 +35,7 @@ dimDates = dimDates.astype({"day_of_week": str})
 dimDates = dimDates.astype({"weekday": str})
 dimDates = dimDates.astype({"month_and_year": str})
 dimDates = dimDates.astype({"date_raw": str})
-"""
+
 
 #Connects to the database
 try:

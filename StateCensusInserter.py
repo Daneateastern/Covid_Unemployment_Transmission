@@ -17,7 +17,9 @@ state_census = state_census.astype({"State": str})
 state_census = state_census.astype({"POPESTIMATE2020": float})
 state_census = state_census.astype({"POPESTIMATE2021": float})
 state_census = state_census.astype({"DEATHS2020": float})
-state_census = state_census.astype({"DEATHS2020": float})
+state_census = state_census.astype({"DEATHS2021": float})
+
+
 
 try:
     connection = psycopg2.connect(user="postgres",
@@ -30,8 +32,9 @@ try:
     postgres_insert_query = """ INSERT INTO State_Census  
     (state, Pop_2020, Pop_2021, Death_2020, Death_2021) 
     VALUES (%s,%s,%s,%s,%s)"""
-
+    
     for i in range(0, len(state_census)):
+        print(state_census.loc[i])
         record_to_insert = (state_census.loc[i])  
         cursor.execute(postgres_insert_query, record_to_insert)
         connection.commit()

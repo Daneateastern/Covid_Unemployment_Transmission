@@ -36,8 +36,8 @@ CREATE TABLE DateMapper (
 	Week VARCHAR ( 50 ),
 	Day_Of_Week VARCHAR (50),
 	Weekday VARCHAR ( 50 ),
-	Month_and_year VARCHAR (50)
-	
+	Month_and_year VARCHAR (50),
+	Date_raw VARCHAR(50)
 );
 
 
@@ -108,18 +108,20 @@ CREATE TABLE Covid_Deaths_Per_State (
 
 
 CREATE TABLE County_Census (
-	state VARCHAR (50) PRIMARY KEY,
-	Pop_2020 VARCHAR (50),
-	Pop_2021 VARCHAR (50),
-	Death_2020 VARCHAR (50),
-	Death_2021 VARCHAR (50)
+	state VARCHAR (50),
+	county VARCHAR (50), 
+	Pop_2020 FLOAT (50),
+	Pop_2021 FLOAT (50),
+	Death_2020 FLOAT (50),
+	Death_2021 FLOAT (50),
+	County_Key VARCHAR (50) PRIMARY KEY
 );
 
 
 CREATE TABLE State_Census (
 	state VARCHAR (50) PRIMARY KEY,
-	Pop_2020 VARCHAR (50),
-	Pop_2021 VARCHAR (50),
-	Death_2020 VARCHAR (50),
-	Death_2021 VARCHAR (50)
+	Pop_2020 FLOAT (50),
+	Pop_2021 FLOAT (50),
+	Death_2020 FLOAT (50),
+	Death_2021 FLOAT (50)
 );

@@ -15,12 +15,15 @@ county_census = pd.read_csv(r'C:\Users\Dane\Desktop\WriteToDatabase\countyPopula
 county_census.columns
 #matching data types for insert
 county_census = county_census.astype({"State": str})
+county_census = county_census.astype({"County": str})
 county_census = county_census.astype({"POPESTIMATE2020": float})
 county_census = county_census.astype({"POPESTIMATE2021": float})
 county_census = county_census.astype({"DEATHS2020": float})
-county_census = county_census.astype({"DEATHS2020": float})
+county_census = county_census.astype({"DEATHS2021": float})
 
-
+county_census["county_key"] = ""
+county_census["county_key"] = county_census["State"] + county_census["County"]
+county_census["county_key"]
 try:
     connection = psycopg2.connect(user="postgres",
                                   password="1988",
@@ -30,8 +33,8 @@ try:
     cursor = connection.cursor()
 
     postgres_insert_query = """ INSERT INTO county_Census  
-    (county, pop_2020, pop_2021, death_2020, death_2021) 
-    VALUES (%s,%s,%s,%s,%s)"""
+    (state, county, pop_2020, pop_2021, death_2020, death_2021, county_key) 
+    VALUES (%s,%s,%s,%s,%s,%s,%s)"""
 
     for i in range(0, len(county_census)):
         record_to_insert = (county_census.loc[i])  
